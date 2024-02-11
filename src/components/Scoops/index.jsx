@@ -10,7 +10,6 @@ const Scoops = () => {
   useEffect(() => {
     axios.get("http://localhost:4500/scoops").then((res) => setData(res.data));
   }, []);
-  console.log(data);
   return (
     <div className="container my-5 ">
       <h1>Dondurma Çeşitleri</h1>

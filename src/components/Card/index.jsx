@@ -6,6 +6,8 @@ const Card = ({ item, basket, setBasket }) => {
     setBasket(basket.filter((i) => i.name !== item.name));
   };
 
+  console.log(basket);
+
   return (
     <div
       style={{ width: "190px" }}
@@ -19,7 +21,9 @@ const Card = ({ item, basket, setBasket }) => {
         <button onClick={handleReset} className="btn btn-sm btn-outline-danger">
           Sıfırla
         </button>
-        <span className="fs-2">{amount}</span>
+        <span data-testid="amount" className="fs-2">
+          {amount}
+        </span>
         <button
           onClick={() => setBasket([...basket, item])}
           className="btn btn-sm btn-outline-success"
