@@ -13,3 +13,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.terms-box {
+  position: relative;
+  white-space: nowrap;
+}
+
+.terms-box p {
+  position: absolute;
+  background-color: white;
+  padding: 5px 10px;
+  color: black;
+  border-radius: 10px;
+  left: -20px;
+  top: -50px;
+  font-size: 14px;
+}
